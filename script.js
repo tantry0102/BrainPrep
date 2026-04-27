@@ -36,7 +36,7 @@ document.getElementById("app").innerHTML=`
 
 <div class="menu-header">
     <img src="BrainPrep.png" class="menu-logo">
-    <h1 class="menu-title">Welcome to BrainPrep</h1>
+    <h1 class="menu-title">Welcome to BrainPrep<br>Latihan Soal Online Gratis</h1>
 </div>
 
 <div class="menu-sub">Pilih latihan</div>
