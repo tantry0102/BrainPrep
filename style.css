@@ -1,0 +1,254 @@
+body{
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+/* ===== MENU ===== */
+.menu-wrap{
+    width:100%;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    border-radius:12px;
+}
+
+
+.menu-sub{color:#94a3b8;margin-bottom:30px;}
+
+.menu-grid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.menu-card{
+    width:160px;
+    height:160px;
+    background:#1e293b;
+    border-radius:16px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.menu-card:hover{
+    transform:scale(1.05);
+}
+
+.menu-icon{
+    font-size:40px;
+}
+
+.menu-header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;              /* jarak logo & teks */
+    margin-bottom:10px;
+}
+
+.menu-logo{
+    width:200px;            /* ukuran logo */
+    height:200px;
+    object-fit:contain;
+}
+
+.menu-title{
+    font-size:32px;
+    font-weight:700;
+    text-align:left;
+}
+
+
+/* ===== INPUT ===== */
+.input-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+
+.input-card{
+    width:420px;
+    background:#1e293b;
+    padding:30px;
+    border-radius:16px;
+    text-align:center;
+}
+
+.latihan-label{
+    font-size:18px;
+    color:white;
+    margin-bottom:10px;
+}
+
+input{
+    width:70%;
+    max-width:320px;
+    padding:12px;
+    border-radius:10px;
+    border:none;
+    margin-bottom:10px;
+}
+
+button{
+    width:100%;
+    max-width:320px;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+}
+
+.logo-input{
+    width:200px;
+    margin-bottom:-10px;
+}
+
+.input-title{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:5px;   /* 🔥 kecilin jarak ke bawah */
+}
+
+
+
+/* ===== APP ===== */
+.app{
+    width:950px;
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    display:flex;
+    gap:20px;
+}
+
+/* ===== GRID NAVIGASI ===== */
+.main{flex:2;}
+.sidebar{
+    flex:1;
+    background:#111827;
+    padding:10px;
+    border-radius:10px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:5px;
+}
+
+.grid div{
+    padding:8px;
+    text-align:center;
+    border-radius:5px;
+    cursor:pointer;
+    background:#9ca3af;
+    color:black;
+}
+
+.active{background:#facc15;}
+.answered{background:#22c55e;}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111827;
+    padding: 16px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.header-left{
+    display:flex;              /* 🔥 ini kunci utama */
+    align-items:center;        /* sejajar tengah */
+    gap:10px;                  /* jarak logo & teks */
+}
+
+.app-title{
+    font-size:14px;
+    font-weight:bold;
+}
+
+.header-center{
+    flex:1;                 /* 🔥 supaya ambil ruang tengah */
+    text-align:center;      /* posisi teks di tengah */
+    font-size:20px;         /* ukuran font */
+    font-weight:600;        /* agak tebal */
+    letter-spacing:0.5px;   /* jarak huruf biar elegan */
+}
+
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+
+/* ===== SOAL ===== */
+#quiz h3{
+    font-family:Arial, sans-serif;  /* 🔥 font */
+    font-size:14px;                 /* ukuran */
+    font-weight:600;                /* agak tebal */
+    line-height:1.4;                /* jarak antar baris */
+}
+
+.option{
+    font-size:14px;
+    background:#334155;
+    padding:14px;
+    margin:8px 0;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.selected{background:#22c55e;color:black;}
+
+/* ===== REVIEW ===== */
+.correct{background:#22c55e;color:black;}
+.user{border:2px solid #3b82f6;}
+
+/* ===== HASIL BUTTON ===== */
+.review-btn{
+    background:#00357a;
+    color:#ffffff;
+    font-weight:bold;
+    padding:14px 18px;
+    border:none;
+    border-radius:10px;
+    width:45%;
+    cursor:pointer;
+    font-size:14px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.25);
+    transition:0.2s;
+}
+
+.review-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 6px 14px rgba(0,0,0,0.35);
+}
+
+
+
+/* ===== TIMER ===== */
+#timer{
+    background:#0f172a;
+    padding:6px 12px;
+    border-radius:6px;
+    font-weight:bold;
+}
